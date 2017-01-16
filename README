@@ -1,0 +1,23 @@
+***This is the beginning of the README file for SEAC***
+
+#############################################
+#############################################
+SEAC - Source Extraction Algorithm for COBRaS
+#############################################
+
+Author: Jack Morford
+
+Based on original flux extraction script by Luke Peck
+
+SEAC is intended as an all in one source detection and flux extraction
+script for use on astronomical radio images. It has been designed for
+use within the AIPS environment and was motivated by the Cygnus OB2 Radio
+Survey (COBRaS).
+
+The source detection algorithm uses a Pixel-by-Pixel method, whereby
+pixels above a given seed threshold are detected, then their surrounding
+pixels are flooded (i.e. tested to see if they are above a given flood
+threshold level). This is the floodfill algorithm as described by Hancock
+et al. 2012. The entire program is well described in Chapter 3 of the PhD
+thesis of Morford, J. 2017.
+
